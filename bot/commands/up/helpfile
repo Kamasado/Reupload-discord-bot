@@ -1,0 +1,21 @@
+**!up <destino> <enlace>**
+-=
+Sube un archivo a **Mega.nz** o **Google Drive** desde un enlace.
+Puedes subir cualquier archivo a la nube. Solo procura que el enlace lleve directamente a la descarga.
+/-
+Sintaxis:
+-=
+```
+!up mega <enlace>
+```
+```
+!up gdrive <enlace>
+```
+Puedes abreviar **mega** y **gdrive** usando **m** y **g**
+/-
+Ejemplos:
+-=
+```
+!up m http://firulai.net/r34Frry.mp4
+!up g https://lwgod.scam/orar_sin_ella.rar
+```

@@ -1,0 +1,8 @@
+{
+    "User" : "{USER}",
+    "Password" : "{PASS}",
+    "DownloadWorkers" : 4,
+    "UploadWorkers" : 4,
+    "SkipSameSize" : true,
+    "Verbose" : 1
+}
