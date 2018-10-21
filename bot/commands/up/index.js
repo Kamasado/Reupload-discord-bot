@@ -4,12 +4,12 @@ const megaURLRegex = require('mega-url-regex');
 const errmsg = 'Comando formulado incorrectamente.\nEscribe **!ayuda up** para más información.';
 
 function valid(arg) {
-  if (arg.length == 2) {
-    return true;
-  } else if (/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/.test(arg[1])) {
-    return true;
+  if (!arg.length == 2) {
+    return false;
+  } else if (!/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/.test(arg[1])) {
+    return false;
   }
-  return false;
+  return true;
 }
 
 function isMegaLink(link) {
