@@ -3,9 +3,9 @@
   This docker image provides a discord bot that uploads files remotely to the cloud (Mega.nz and Google drive).
 
 ## **Required environment variables:**
-  - USER (the email of your Mega account)
-  - PASS (the password of your Mega account)
-  - TOKENBOT (the token of your discord bot)
+  - **USER** (the email of your Mega account)
+  - **PASS** (the password of your Mega account)
+  - **TOKENBOT** (the token of your discord bot)
 
 ### Optional:
   - SSHPORT (only set this when your container cannot forward ports) (it must be a random number between 1000 and 65535) [Random port generator](https://www.random.org/integers/?num=10&min=1000&max=65535&col=3&base=10&format=html&rnd=new)
