@@ -11,7 +11,7 @@
   - **SSHPORT** (only set this when your container cannot forward ports) (it must be a random number between 1000 and 65535) [Random port generator](https://www.random.org/integers/?num=10&min=1000&max=65535&col=3&base=10&format=html&rnd=new)
 
 ## **Starting the bot:**
-  After starting the bot you have to link your Google Drive account so please follow the steps.
+  After starting the bot you have to link your Google Drive account, so please follow the steps:
   1. Run the Image:
   ```
   docker run -p 9595:26 -e USER=<MEGA_EMAIL> -e PASS=<MEGA_PASS> -e TOKENBOT=<DISCORD_TOKEN> -e SSHPORT=<CHOSEN_PORT> kamasado/reupload-discord-bot
@@ -38,4 +38,4 @@
   g about
   ```
   Google will give you a link where you have to log in to your Drive account.
-  After this you will be given a code that you have to paste in the terminal.
+  After this, you will be given a code that you have to paste in the terminal.
