@@ -9,11 +9,11 @@ then
     megadl --path $folder "$1"
     g upload $folder --recursive
     rm -rf $folder
-    uploadid=$(g list | grep $folder | awk '{print $1}')
+    uploadid=$(g list --service-account drive.json | grep $folder | awk '{print $1}')
     g share $uploadid
 else
     filename=$(megadl "$1" | grep Downloaded | awk '{print $2}')
-    uploadid=$(g upload $filename --share --delete | sed -n -e 's/^.*id=//p' | sed -n -e 's/&.*$//p')
+    uploadid=$(g upload $filename --share --delete --service-account drive.json | sed -n -e 's/^.*id=//p' | sed -n -e 's/&.*$//p')
 fi
 
 viewlink="https://drive.google.com/open?id=$uploadid"
