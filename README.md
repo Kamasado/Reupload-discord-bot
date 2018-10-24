@@ -15,7 +15,7 @@
   After starting the bot you have to link your Google Drive account, so please follow the steps:
   1. Run the Image:
   ```
-  docker run -p 9595:26 -e USER=<MEGA_EMAIL> -e PASS=<MEGA_PASS> -e TOKENBOT=<DISCORD_TOKEN> -e SSHPORT=<CHOSEN_PORT> kamasado/reupload-discord-bot
+  docker run -p 9595:26 -e USER=<MEGA_EMAIL> -e PASS=<MEGA_PASS> -e DRIVE=<SERVICE_ACCOUNT_KEY> -e TOKENBOT=<DISCORD_TOKEN> -e SSHPORT=<CHOSEN_PORT> kamasado/reupload-discord-bot
   ```
   2. SSH to your container (password: `dk12`):
 
