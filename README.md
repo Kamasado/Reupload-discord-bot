@@ -5,6 +5,7 @@
 ## **Required environment variables:**
   - **USER** (your Mega account email)
   - **PASS** (your Mega account password)
+  - **DRIVE** (your Google Drive [service account](https://console.developers.google.com/iam-admin/serviceaccounts) json key)
   - **TOKENBOT** (your discord bot token)
 
 ### Optional:
