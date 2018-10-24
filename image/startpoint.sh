@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo 'dk12' | sudo -S /etc/init.d/ssh start
+echo dk12 | sudo -S echo -- Authorized sudo --
+echo "kamasado:$SSHPASS" | sudo chpasswd
+sudo /etc/init.d/ssh start
 
 sed -i -e "s/{USER}/$USER/" ~/.megarc
 sed -i -e "s/{PASS}/$PASS/" ~/.megarc
