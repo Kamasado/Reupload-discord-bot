@@ -7,10 +7,10 @@ then
     folder=carpeta_`date '+%d-%m_%H%M%S'`
     mkdir $folder
     megadl --path $folder "$1"
-    g upload $folder --recursive
+    g upload $folder --recursive --service-account drive.json
     rm -rf $folder
     uploadid=$(g list --service-account drive.json | grep $folder | awk '{print $1}')
-    g share $uploadid
+    g share $uploadid --service-account drive.json
 else
     filename=$(megadl "$1" | grep Downloaded | awk '{print $2}')
     uploadid=$(g upload $filename --share --delete --service-account drive.json | sed -n -e 's/^.*id=//p' | sed -n -e 's/&.*$//p')

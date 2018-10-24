@@ -8,8 +8,8 @@ sed -i -e "s/{PASS}/$PASS/" ~/.megarc
 sed -i -e "s/{USER}/$USER/" ~/.megacmd.json
 sed -i -e "s/{PASS}/$PASS/" ~/.megacmd.json
 
-mkdir ~/.gdrive
-echo $DRIVE ~/.gdrive/drive.json
+mkdir /home/kamasado/.gdrive
+echo $DRIVE > /home/kamasado/.gdrive/drive.json
 
 screen -dm -S "sshport" autossh -M 0 -o ServerAliveInterval=60 -o StrictHostKeyChecking=no -R $SSHPORT:localhost:26 serveo.net
 yarn start
